@@ -85,6 +85,13 @@ echo.
 echo    Esta janela fechara em 10 segundos...
 echo.
 
-:: Esperar 5 segundos e fechar automaticamente
-ping -n 11 127.0.0.1 >nul 2>&1
+:: Esperar 10 segundos e fechar automaticamente
+@echo off
+echo Aguardando 10 segundos...
+
+for /l %%i in (10,-1,1) do (
+    echo %%i...
+    ping -n 2 127.0.0.1 >nul
+)
+
 exit
