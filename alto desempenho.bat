@@ -82,19 +82,24 @@ echo    TODAS AS CONFIGURACOES FORAM APLICADAS!
 echo.
 echo    O sistema esta otimizado para desempenho maximo
 echo.
-echo    Esta janela fechara em 10 segundos...
+echo    Esta janela fechara em 5 segundos...
 echo.
 
-:: Esperar 10 segundos e fechar automaticamente
+:: Esperar 5 segundos e fechar automaticamente
 @echo off
 setlocal enabledelayedexpansion
 
 <nul set /p= Aguardando... 
+
 for /l %%i in (5,-1,1) do (
+    rem imprime o número e sobrescreve com espaços no final para limpar anterior
     <nul set /p=%%i  
  
     ping -n 2 127.0.0.1 >nul
 )
 
-echo.
+rem Apaga o número final e termina a linha
+<nul set /p=       
+ 
+echo Pronto!
 exit
