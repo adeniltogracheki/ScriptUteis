@@ -54,6 +54,7 @@ powercfg -change -monitor-timeout-dc 0 >nul 2>&1
 powercfg -change -standby-timeout-ac 0 >nul 2>&1
 powercfg -change -standby-timeout-dc 0 >nul 2>&1
 
+color 2
 :: Exibir mensagem grande por 5 segundos e fechar automaticamente
 cls
 echo.
@@ -63,6 +64,7 @@ echo  *                                                *
 echo  *             ALTO DESEMPENHO                    *
 echo  *               ATIVADO COM                      *
 echo  *               SUCESSO!                         *
+echo  *                                                *
 echo  *  Criado por: Adenilto Gracheki                 *
 echo  **************************************************
 echo.
