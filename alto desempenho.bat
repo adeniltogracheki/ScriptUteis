@@ -54,18 +54,18 @@ powercfg -change -monitor-timeout-dc 0 >nul 2>&1
 powercfg -change -standby-timeout-ac 0 >nul 2>&1
 powercfg -change -standby-timeout-dc 0 >nul 2>&1
 
-color 2
-:: Exibir mensagem grande por 5 segundos e fechar automaticamente
+:: Exibir mensagem grande por 10 segundos e fechar automaticamente
 cls
+color 2
 echo.
 echo.
 echo  **************************************************
 echo  *                                                *
 echo  *             ALTO DESEMPENHO                    *
-echo  *               ATIVADO COM                      *
-echo  *               SUCESSO!                         *
+echo  *              ATIVADO COM                       *
+echo  *                SUCESSO!                        *
 echo  *                                                *
-echo  *  Criado por: Adenilto Gracheki                 *
+echo  *         Criado por: Adenilto Gracheki          *
 echo  **************************************************
 echo.
 echo  ===============================================
@@ -82,9 +82,9 @@ echo    TODAS AS CONFIGURACOES FORAM APLICADAS!
 echo.
 echo    O sistema esta otimizado para desempenho maximo
 echo.
-echo    Esta janela fechara em 5 segundos...
+echo    Esta janela fechara em 10 segundos...
 echo.
 
 :: Esperar 5 segundos e fechar automaticamente
-ping -n 6 127.0.0.1 >nul 2>&1
+ping -n 11 127.0.0.1 >nul 2>&1
 exit
