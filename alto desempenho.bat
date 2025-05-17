@@ -87,11 +87,14 @@ echo.
 
 :: Esperar 10 segundos e fechar automaticamente
 @echo off
-echo Aguardando 10 segundos...
+@echo off
+setlocal enabledelayedexpansion
 
-for /l %%i in (10,-1,1) do (
-    echo %%i...
+echo Aguardando 5 segundos...
+for /l %%i in (5,-1,1) do (
+    <nul set /p=%%i...[K
     ping -n 2 127.0.0.1 >nul
 )
 
+echo.
 exit
